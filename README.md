@@ -64,3 +64,16 @@ GitHub Pages の「Source」を GitHub Actions に設定しておく
 
 
 ## タスク管理のベストプラクティス
+
+
+## reveal.jsの実行について
+```bash
+npx reveal-md index.md
+```
+このコマンドでreveal.jsを実行できる。
+どうやら、確認しながら修正ができるようになっているためファイル変更を監視し続けているみたいで、処理は動き続けるみたい。
+終了したい場合は
+```mathematica
+ctrl + C
+```
+で、止まるみたい
