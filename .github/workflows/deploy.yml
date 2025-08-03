@@ -16,10 +16,11 @@ jobs:
           cd slides
           npm ci
           npx reveal-md index.md --static _site
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
+      - name: Deploy to Pages
+        uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
+          publish_dir: slides/_site
+
 permissions:
   contents: write
